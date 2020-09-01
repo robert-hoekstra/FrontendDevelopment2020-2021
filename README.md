@@ -1,14 +1,11 @@
 # Procesverslag
-**Auteur:** -jouw naam-
-
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-
+**Auteur:** Robert Hoekstra
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. https://www.ajax.nl/artikelen/ajax-bindt-ook-eintracht-frankfurt-aan-de-zegekar/
+2. https://www.ajax.nl/
 3. -...-
+
 
 
 
@@ -56,16 +53,19 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Intake (week 1)
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** Rood
 
-**Je focus:** -kies uit responsive óf surface plane-
+**Je focus:** Responsive Design
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** https://ajax.nl
 
 **Screenshot(s):**
+https://www.ajax.nl/
+![ajax-overview](https://user-images.githubusercontent.com/45421908/91839319-1f4e0600-ec4f-11ea-97f9-0aa0a9a75520.png)
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
+https://www.ajax.nl/artikelen/ajax-bindt-ook-eintracht-frankfurt-aan-de-zegekar/
+![ajax-detail](https://user-images.githubusercontent.com/45421908/91839685-c3d04800-ec4f-11ea-9edc-7bee5676e888.png)
+
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)
