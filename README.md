@@ -2,7 +2,7 @@
 **Auteur:** Robert Hoekstra
 
 ## Bronnenlijst
-1. https://www.ajax.nl/artikelen/ajax-bindt-ook-eintracht-frankfurt-aan-de-zegekar/
+1. https://www.ajaxshop.nl/nl/wedstrijd
 2. https://www.ajax.nl/
 3. -...-
 
@@ -63,8 +63,10 @@
 https://www.ajax.nl/
 ![ajax-overview](https://user-images.githubusercontent.com/45421908/91839319-1f4e0600-ec4f-11ea-97f9-0aa0a9a75520.png)
 
-https://www.ajax.nl/artikelen/ajax-bindt-ook-eintracht-frankfurt-aan-de-zegekar/
-![ajax-detail](https://user-images.githubusercontent.com/45421908/91839685-c3d04800-ec4f-11ea-9edc-7bee5676e888.png)
+https://www.ajaxshop.nl/nl/wedstrijd
+![ajax_webshop](https://user-images.githubusercontent.com/45421908/91841490-c54f3f80-ec52-11ea-962c-d7eec6634637.png)
+
+
 
 
 **Breakdown-schets(en):**
