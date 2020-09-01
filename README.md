@@ -1,6 +1,9 @@
 # Procesverslag
 **Auteur:** Robert Hoekstra
 
+![banner](https://user-images.githubusercontent.com/45421908/91854183-a0af9380-ec63-11ea-9dc9-4cc821d9f7de.png)
+
+
 ## Bronnenlijst
 1. https://www.ajaxshop.nl/nl/wedstrijd
 2. https://www.ajax.nl/
