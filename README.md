@@ -2,8 +2,8 @@
 **Auteur:** Robert Hoekstra
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
+1. https://www.ajax.nl/artikelen/ajax-bindt-ook-eintracht-frankfurt-aan-de-zegekar/
+2. https://www.ajax.nl/
 3. -...-
 
 
