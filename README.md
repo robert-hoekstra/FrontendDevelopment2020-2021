@@ -70,4 +70,9 @@ https://www.ajaxshop.nl/nl/wedstrijd
 
 
 **Breakdown-schets(en):**
+Homepage
+![IMG_0064](https://user-images.githubusercontent.com/45421908/91853409-6ee9fd00-ec62-11ea-8ad4-b5f117522b3c.PNG)
+Webshop
+![IMG_0065](https://user-images.githubusercontent.com/45421908/91853401-6bef0c80-ec62-11ea-953c-70530259bca7.PNG)
+
 
