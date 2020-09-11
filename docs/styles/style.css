@@ -3,3 +3,20 @@
   box-sizing:border-box;  
 }
 
+.language{
+  position: fixed;
+}
+
+header{
+  background-color: red;
+}
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+}
