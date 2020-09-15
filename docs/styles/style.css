@@ -8,10 +8,11 @@
 }
 
 @font-face {font-family: "Lexia Advertising"; src: url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.eot"); src: url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.woff") format("woff"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.svg#Lexia Advertising") format("svg"); }
+
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "SuisseIntl", sans-serif;
@@ -173,7 +174,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #c2002f;
-  height: 15vh;
+  height: 20vh;
   margin-bottom: 2rem;
 }
 
@@ -246,10 +247,10 @@ section#grid-item-4 button{
   border:none;
 }
 .mobile-menu{
-  height: 85vh;
+  height: 80vh;
   transition:0.6s;
   position: fixed;
-  transform: translateY(-180%);
+  transform: translateY(-220%);
   z-index: -10;
   font-family: "SuisseIntl", sans-serif;
   display: grid;
@@ -516,5 +517,5 @@ footer section:last-of-type section{
 }
 
 .show{
-  transform: translateY(5.5%);
+  transform: translateY(10%);
 }
