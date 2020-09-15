@@ -120,6 +120,8 @@ main section section a{
   color: black;
 }
 
+
+
 img {
   width: 100%;
 }
@@ -152,16 +154,156 @@ main {
 }
 
 header {
+  z-index: 50;
+  display: block;
   position: sticky;
-  z-index: 1;
   top: 0;
   background-color: #c2002f;
   height: 9.5rem;
   margin-bottom: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
+header nav{
+  z-index: 85;
+  border-top: solid 2px white;
+  position: fixed;
+  top:11%;
+  width: 100%;
+  background-color: #c2002f;
+  border-bottom: solid 2px white;
+}
+
+header nav ul{
+}
+
+
+
+.gridHolder{
+  padding-top: 1rem;
+  width: 100%;
+  background-color: #c2002f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: -1;
+  height: 100%;
+  gap: 1rem;
+}
+
+section#grid-item-1{
+  padding-left: 1.5rem;
+}
+
+section#grid-item-2, section#grid-item-4{
+  text-align: right;
+  padding-right: 1.5rem;
+}
+
+section#grid-item-3 ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+section#grid-item-3 ul li a{
+  padding: 0.6rem;
+  margin-right: 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: "SuisseIntl",sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  color: white;
+  text-decoration-line: none;
+  border: solid 1px white;
+}
+
+section#grid-item-3 ul li a:hover{
+  color: black;
+  background-color: white;
+  text-decoration-line: none;
+}
+
+
+section#grid-item-4 button{
+  background-color: transparent;
+  border:none;
+}
+.mobile-menu{
+  height: 100vh;
+  transition:0.6s;
+  position: fixed;
+  transform: translateY(-180%);
+  z-index: -10;
+  font-family: "SuisseIntl", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 2rem;
+  color: white;
+}
+
+.mobile-menu section.grid-item-1{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.mobile-menu section.grid-item-2{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.mobile-menu section.grid-item-2 button{
+  padding-right: 1.5rem;
+  text-align: right;
+  display: block;
+  background-color: transparent;
+  border:none;
+}
+
+.mobile-menu section.grid-item-1 ul{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  list-style: none;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.25;
+}
+
+.mobile-menu section.grid-item-1 ul li:first-of-type{
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.mobile-menu section.grid-item-1 ul:last-of-type{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-menu section.grid-item-1 ul:last-of-type a svg path{
+  transition: 0.3s;
+  fill: white;
+}
+
+.mobile-menu section.grid-item-1 ul:last-of-type a svg path:hover{
+  fill: #181314;
+}
+
+#grid-item-1{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 main article {
   padding-top: 1rem;
   margin-bottom: 1rem;
@@ -271,15 +413,6 @@ main section article a:hover {
   opacity: 0.8;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-header nav ul {
-  display: flex;
-  flex-direction: row;
-}
 
 footer {
   padding-top: 2rem;
@@ -366,4 +499,8 @@ footer span {
 footer section:last-of-type section{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.show{
+  transform: translateY(0.5%);
 }
