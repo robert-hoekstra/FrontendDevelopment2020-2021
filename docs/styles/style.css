@@ -168,7 +168,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #c2002f;
-  height: 10vh;
+  height: 15vh;
   margin-bottom: 2rem;
 }
 
@@ -241,7 +241,7 @@ section#grid-item-4 button{
   border:none;
 }
 .mobile-menu{
-  height: 90vh;
+  height: 85vh;
   transition:0.6s;
   position: fixed;
   transform: translateY(-180%);
@@ -511,5 +511,5 @@ footer section:last-of-type section{
 }
 
 .show{
-  transform: translateY(0.5%);
+  transform: translateY(5.5%);
 }
