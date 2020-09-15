@@ -14,6 +14,7 @@
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+  font-family: "SuisseIntl" sans-serif;
 }
 
 .language {
@@ -138,6 +139,10 @@ img {
 body {
   position: relative;
   color: #181314;
+}
+
+p{
+  padding-bottom: 1rem;
 }
 
 h1,
