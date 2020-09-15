@@ -3,7 +3,7 @@
   font-family: "SuisseIntl", sans-serif;
   src: url("https://www.ajax.nl/frontend/assets/fonts/suisseintl-black.woff2");
   font-style: normal;
-  font-weight: 100;
+  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 
 }
 
