@@ -1,14 +1,28 @@
 /* CSS Document */
-@font-face{
+
+/*Definieren van font-faces. Handig voor externe font-families*/
+@font-face {
   font-family: "SuisseIntl", sans-serif;
   src: url("https://www.ajax.nl/frontend/assets/fonts/suisseintl-black.woff2");
   font-style: normal;
   font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-
 }
 
-@font-face {font-family: "Lexia Advertising"; src: url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.eot"); src: url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.woff") format("woff"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.svg#Lexia Advertising") format("svg"); }
-
+@font-face {
+  font-family: "Lexia Advertising";
+  src: url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.eot");
+  src: url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/e56953aada4b79ccdaa3ccf72adc59ac.svg#Lexia Advertising")
+      format("svg");
+}
+/*Standaard rendering van Chrome neutraliseren en font-family ingesteld voor alles*/
 *,
 *::after,
 *::before {
@@ -17,7 +31,7 @@
   margin: 0;
   font-family: "SuisseIntl", sans-serif;
 }
-
+/*Language switch knopje*/
 .language {
   position: absolute;
   right: 10%;
@@ -31,7 +45,6 @@ nav.filter-bar ul {
   list-style-type: none;
   justify-content: space-between;
 }
-
 
 nav.filter-bar ul li {
   transition: 0.3s;
@@ -56,23 +69,17 @@ article > section {
   grid-template-columns: 1fr 1fr;
 }
 
-main section:last-child section{
+main section:last-child section {
   position: relative;
 }
 
-
-main section section:last-child a{
+main section section:last-child a {
   position: relative;
 }
 
-.advertisement{
-  margin-top: 1rem;
-}
-
-
-main section section a{
-  bottom:10%;
-  left:5%;
+main section section a {
+  bottom: 10%;
+  left: 5%;
   position: absolute;
   margin-top: 0.5rem;
   color: white;
@@ -90,48 +97,7 @@ main section section a{
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.43;
-  
 }
-
-.category-link {
-  font-family: "SuisseIntl", sans-serif;
-  font-size: 0.625rem;
-  color: white;
-  background-color: #413e3e;
-  padding: 0.4375rem 0.3125rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: auto;
-  margin-left: 0;
-  text-align: left;
-}
-
-
-
-
-.main section:last-child section:last-child{
-  display: block;
-  position: relative;
-  margin-top: 1rem;
-  min-height: 23rem;
-  background-color: #c2002f;
-}
-
-.main section:last-child section:last-child h2{
-  display: absolute;
-  top: 10%;
-  left: 5%;
-}
-
-.main section:last-child section:last-child a{
-  display: absolute;
-  bottom: 10%;
-  left:5%;
-  background-color: white;
-  color: black;
-}
-
-
 
 img {
   width: 100%;
@@ -142,7 +108,7 @@ body {
   color: #181314;
 }
 
-p{
+p {
   padding-bottom: 1rem;
 }
 
@@ -154,6 +120,91 @@ h5,
 h6 {
   font-family: "SuisseIntl", sans-serif;
 }
+
+header {
+  z-index: 50;
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: #c2002f;
+  height: 20vh;
+  margin-bottom: 2rem;
+}
+
+header nav {
+  z-index: 85;
+  border-top: solid 2px white;
+  position: fixed;
+  top: 11%;
+  width: 100%;
+  background-color: #c2002f;
+  border-bottom: solid 2px white;
+}
+
+/*class om een grid toe te kennen aan een container/parent element.*/
+.gridHolder {
+  max-width: 100%;
+  padding-top: 1rem;
+  width: 100%;
+  background-color: #c2002f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: -1;
+  height: 100%;
+}
+
+/* column selectors. Kan ik nog omschrijven naar nth-of-type(#) i.p.v. id's maar dit is specifiek voor de nav */
+
+section#grid-item-1 {
+  padding-left: 1.5rem;
+}
+section#grid-item-2,
+section#grid-item-4 {
+  text-align: right;
+  padding-right: 1.5rem;
+}
+
+section#grid-item-3 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+section#grid-item-3 ul li a {
+  padding: 0.6rem;
+  margin-right: 1.5rem;
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: "SuisseIntl", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  color: white;
+  text-decoration-line: none;
+  border: solid 1px white;
+}
+
+section#grid-item-3 ul li a:hover {
+  color: black;
+  background-color: white;
+  text-decoration-line: none;
+}
+
+section#grid-item-4 button {
+  background-color: transparent;
+  border: none;
+}
+
+section#grid-item-1 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*Main section styles*/
 
 main {
   display: grid;
@@ -167,158 +218,6 @@ main {
   text-align: left;
   max-width: 90rem;
 }
-
-header {
-  z-index: 50;
-  display: block;
-  position: sticky;
-  top: 0;
-  background-color: #c2002f;
-  height: 20vh;
-  margin-bottom: 2rem;
-}
-
-header nav{
-  z-index: 85;
-  border-top: solid 2px white;
-  position: fixed;
-  top:11%;
-  width: 100%;
-  background-color: #c2002f;
-  border-bottom: solid 2px white;
-}
-
-header nav ul{
-}
-
-.gridHolder{
-  max-width: 100%;
-  padding-top: 1rem;
-  width: 100%;
-  background-color: #c2002f;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  z-index: -1;
-  height: 100%;
-  gap: 1rem;
-}
-
-section#grid-item-1{
-  padding-left: 1.5rem;
-}
-
-section#grid-item-2, section#grid-item-4{
-  text-align: right;
-  padding-right: 1.5rem;
-}
-
-section#grid-item-3 ul{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  list-style: none;
-  padding-left: 1.5rem;
-}
-
-section#grid-item-3 ul li a{
-  padding: 0.6rem;
-  margin-right: 1.5rem;
-  border-radius: 2rem;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-  font-family: "SuisseIntl",sans-serif;
-  font-weight: 600;
-  line-height: 1.25;
-  color: white;
-  text-decoration-line: none;
-  border: solid 1px white;
-}
-
-section#grid-item-3 ul li a:hover{
-  color: black;
-  background-color: white;
-  text-decoration-line: none;
-}
-
-
-section#grid-item-4 button{
-  background-color: transparent;
-  border:none;
-}
-.mobile-menu{
-  max-width:100%;
-  height: 80vh;
-  transition:0.6s;
-  position: fixed;
-  transform: translateY(-220%);
-  z-index: -10;
-  font-family: "SuisseIntl", sans-serif;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 2rem;
-  color: white;
-}
-
-.mobile-menu section.grid-item-1{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
-
-.mobile-menu section.grid-item-2{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-content: flex-end;
-}
-
-.mobile-menu section.grid-item-2 button{
-  padding-right: 1.5rem;
-  text-align: right;
-  display: block;
-  background-color: transparent;
-  border:none;
-}
-
-.mobile-menu section.grid-item-1 ul{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  list-style: none;
-  padding-bottom: 3rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  line-height: 1.25;
-}
-
-.mobile-menu section.grid-item-1 ul li:first-of-type{
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
-.mobile-menu section.grid-item-1 ul:last-of-type{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.mobile-menu section.grid-item-1 ul:last-of-type a svg path{
-  transition: 0.3s;
-  fill: white;
-}
-
-.mobile-menu section.grid-item-1 ul:last-of-type a svg path:hover{
-  fill: #181314;
-}
-
-#grid-item-1{
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
 main article {
   padding-top: 1rem;
   margin-bottom: 1rem;
@@ -331,11 +230,16 @@ main article > img {
 
 main section > article {
   position: relative;
+  padding-bottom: 1rem;
+  border-bottom: solid 2px #c2002f;
 }
 
 main section:first-of-type img {
-  filter: grayscale(40%);
+  filter: grayscale(30%);
 }
+
+/* Textoverlay voor images*/
+
 main section:first-of-type h2:nth-of-type(1),
 h1:nth-of-type(1) {
   text-shadow: 8px 8px 20px black;
@@ -355,11 +259,6 @@ main section:first-of-type article:last-child span {
   position: absolute;
   bottom: 45%;
   left: 5%;
-}
-
-main section > article {
-  padding-bottom: 1rem;
-  border-bottom: solid 2px #c2002f;
 }
 
 main section:first-child article {
@@ -428,6 +327,7 @@ main section article a:hover {
   opacity: 0.8;
 }
 
+/*Footer styles*/
 
 footer {
   padding-top: 2rem;
@@ -438,7 +338,7 @@ footer {
   margin-top: 2rem;
 }
 
-footer section{
+footer section {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -469,7 +369,7 @@ footer nav {
   padding-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap:1rem;
+  gap: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -503,7 +403,7 @@ footer section button {
 }
 
 footer section a svg {
-  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 footer span {
@@ -511,11 +411,120 @@ footer span {
   color: gray;
 }
 
-footer section:last-of-type section{
+footer section:last-of-type section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.show{
+/*Alle css properties i.c.m. classes en ID's */
+
+.show {
   transform: translateY(10%);
+}
+
+.mobile-menu {
+  max-width: 100%;
+  height: 80vh;
+  transition: 0.6s;
+  position: fixed;
+  transform: translateY(-220%);
+  z-index: -10;
+  font-family: "SuisseIntl", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 2rem;
+  color: white;
+}
+
+.mobile-menu section.grid-item-1 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.mobile-menu section.grid-item-2 {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.mobile-menu section.grid-item-2 button {
+  padding-right: 1.5rem;
+  text-align: right;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-menu section.grid-item-1 ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  list-style: none;
+  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.25;
+}
+
+.mobile-menu section.grid-item-1 ul li:first-of-type {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.mobile-menu section.grid-item-1 ul:last-of-type {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobile-menu section.grid-item-1 ul:last-of-type a svg path {
+  transition: 0.3s;
+  fill: white;
+}
+
+.mobile-menu section.grid-item-1 ul:last-of-type a svg path:hover {
+  fill: #181314;
+}
+
+.main section:last-child section:last-child {
+  display: block;
+  position: relative;
+  margin-top: 1rem;
+  min-height: 23rem;
+  background-color: #c2002f;
+}
+
+.main section:last-child section:last-child h2 {
+  display: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.main section:last-child section:last-child a {
+  display: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: white;
+  color: black;
+}
+
+.category-link {
+  font-family: "SuisseIntl", sans-serif;
+  font-size: 0.625rem;
+  color: white;
+  background-color: #413e3e;
+  padding: 0.4375rem 0.3125rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: auto;
+  margin-left: 0;
+  text-align: left;
+}
+
+.advertisement {
+  margin-top: 1rem;
 }
