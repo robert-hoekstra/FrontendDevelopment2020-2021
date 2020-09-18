@@ -152,7 +152,6 @@ header nav {
   z-index: -1;
   height: 100%;
 }
-
 /* column selectors. Kan ik nog omschrijven naar nth-of-type(#) i.p.v. id's maar dit is specifiek voor de nav */
 
 section#grid-item-1 {
@@ -417,11 +416,6 @@ footer section:last-of-type section {
 }
 
 /*Alle css properties i.c.m. classes en ID's */
-
-.show {
-  transform: translateY(10%);
-}
-
 .mobile-menu {
   max-width: 100%;
   height: 80vh;
@@ -527,4 +521,8 @@ footer section:last-of-type section {
 
 .advertisement {
   margin-top: 1rem;
+}
+
+.show {
+  transform: translateY(10%);
 }
