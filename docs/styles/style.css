@@ -526,3 +526,12 @@ footer section:last-of-type section {
 .show {
   transform: translateY(10%);
 }
+
+#sponsors{
+  margin-left: 1rem;
+  max-height: 100%;
+}
+
+#sponsors a{
+  padding: 1rem;
+}
