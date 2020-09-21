@@ -57,7 +57,7 @@ Wanneer responsive laag voor week 5 goed in elkaar zit ga ik volledig los op de 
 ## Footer
 ![localhost_52330_docs_index html (2)](https://user-images.githubusercontent.com/45421908/93743342-3352ab00-fbf0-11ea-94c1-4e53b7148e55.png)
 ## Fullscreen
-![Imgur](https://imgur.com/bGxPABa)
+![fullscreen](https://imgur.com/bGxPABa.png)
 
 
 
