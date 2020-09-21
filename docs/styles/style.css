@@ -154,24 +154,31 @@ header nav {
 }
 /* column selectors. Kan ik nog omschrijven naar nth-of-type(#) i.p.v. id's maar dit is specifiek voor de nav */
 
-section#grid-item-1 {
+header div section:nth-child(1){
   padding-left: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
-section#grid-item-2,
-section#grid-item-4 {
+header div section:nth-child(2){
   text-align: right;
   padding-right: 1.5rem;
-}
 
-section#grid-item-3 ul {
+}
+/* header div section:nth-child(3){
+
+} */
+header div section:nth-child(3) ul{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
   padding-left: 1.5rem;
+
 }
 
-section#grid-item-3 ul li a {
+header div section:nth-child(3) ul li a{
   padding: 0.6rem;
   margin-right: 1.5rem;
   border-radius: 2rem;
@@ -185,23 +192,20 @@ section#grid-item-3 ul li a {
   border: solid 1px white;
 }
 
-section#grid-item-3 ul li a:hover {
+header div section:nth-child(3) ul li a:hover{
   color: black;
   background-color: white;
   text-decoration-line: none;
 }
-
-section#grid-item-4 button {
+header div section:nth-child(4){
+  text-align: right;
+  padding-right: 1.5rem;
+}
+header div section:nth-child(4) button{
   background-color: transparent;
   border: none;
 }
 
-section#grid-item-1 {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
 
 /*Main section styles*/
 
@@ -416,6 +420,9 @@ footer section:last-of-type section {
 }
 
 /*Alle css properties i.c.m. classes en ID's */
+
+
+/*Op de website van ajax wordt er gebruik gemaakt van 3 verschillende nav elementen. Classes voor deze onderdelen zijn essentieel. */
 .mobile-menu {
   max-width: 100%;
   height: 80vh;
@@ -430,20 +437,20 @@ footer section:last-of-type section {
   color: white;
 }
 
-.mobile-menu section.grid-item-1 {
+.mobile-menu section:nth-child(1){
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
 }
 
-.mobile-menu section.grid-item-2 {
+.mobile-menu section:nth-child(2) {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   align-content: flex-end;
 }
 
-.mobile-menu section.grid-item-2 button {
+.mobile-menu section:nth-child(2) button {
   padding-right: 1.5rem;
   text-align: right;
   display: block;
@@ -451,7 +458,7 @@ footer section:last-of-type section {
   border: none;
 }
 
-.mobile-menu section.grid-item-1 ul {
+.mobile-menu section:nth-child(1) ul {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -462,50 +469,29 @@ footer section:last-of-type section {
   line-height: 1.25;
 }
 
-.mobile-menu section.grid-item-1 ul li:first-of-type {
+.mobile-menu section:nth-child(1) ul li:first-of-type {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.25;
 }
 
-.mobile-menu section.grid-item-1 ul:last-of-type {
+.mobile-menu section:nth-child(1) ul:last-of-type {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.mobile-menu section.grid-item-1 ul:last-of-type a svg path {
+.mobile-menu section:nth-child(1) ul:last-of-type a svg path {
   transition: 0.3s;
   fill: white;
 }
 
-.mobile-menu section.grid-item-1 ul:last-of-type a svg path:hover {
+.mobile-menu section:nth-child(1) ul:last-of-type a svg path:hover {
   fill: #181314;
 }
 
-.main section:last-child section:last-child {
-  display: block;
-  position: relative;
-  margin-top: 1rem;
-  min-height: 23rem;
-  background-color: #c2002f;
-}
-
-.main section:last-child section:last-child h2 {
-  display: absolute;
-  top: 10%;
-  left: 5%;
-}
-
-.main section:last-child section:last-child a {
-  display: absolute;
-  bottom: 10%;
-  left: 5%;
-  background-color: white;
-  color: black;
-}
-
+/*Binnen sections wordt er niet altijd even veel links gebruikt. Ook niet elke link wordt gebruikt voor dezelfde doeleinde. Deze class is voor de blog style categories die Ajax gebruikt op hun website */
 .category-link {
   font-family: "SuisseIntl", sans-serif;
   font-size: 0.625rem;
@@ -518,20 +504,20 @@ footer section:last-of-type section {
   margin-left: 0;
   text-align: left;
 }
-
+/* Specifieke class voor sections die net iets afwijken van de rest omdat zij als advertisement dienen */
 .advertisement {
   margin-top: 1rem;
 }
-
+/* Wordt gebruikt voor het toggle effect op het menu */
 .show {
   transform: translateY(10%);
 }
 
-#sponsors{
+header div section:first-child section{
   margin-left: 1rem;
   max-height: 100%;
 }
 
-#sponsors a{
+header div section:first-child section a{
   padding: 1rem;
 }
