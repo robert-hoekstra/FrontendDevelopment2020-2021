@@ -521,3 +521,34 @@ header div section:first-child section{
 header div section:first-child section a{
   padding: 1rem;
 }
+
+
+
+.webshop section:nth-of-type(2) ul{
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  list-style: none;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.webshop section:nth-of-type(2) ul li{
+  text-align: center;
+}
+
+.webshop img{
+  width: 50%;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.webshop > h1 h2 h3 h4 h5 h6{
+  word-wrap:break-word;
+
+}
