@@ -526,7 +526,7 @@ header div section:first-child section a{
 
 .webshop section:nth-of-type(2) ul{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   list-style-type: none;
   list-style: none;
   margin-block-start: 0em;
