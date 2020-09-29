@@ -37,6 +37,10 @@
   right: 10%;
 }
 
+body {
+  min-width: 420px;
+}
+
 nav.filter-bar ul {
   padding: 0;
   display: flex;
@@ -154,31 +158,29 @@ header nav {
 }
 /* column selectors. Kan ik nog omschrijven naar nth-of-type(#) i.p.v. id's maar dit is specifiek voor de nav */
 
-header div section:nth-child(1){
+header div section:nth-child(1) {
   padding-left: 1.5rem;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
 }
-header div section:nth-child(2){
+header div section:nth-child(2) {
   text-align: right;
   padding-right: 1.5rem;
-
 }
 /* header div section:nth-child(3){
 
 } */
-header div section:nth-child(3) ul{
+header div section:nth-child(3) ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
   padding-left: 1.5rem;
-
 }
 
-header div section:nth-child(3) ul li a{
+header div section:nth-child(3) ul li a {
   padding: 0.6rem;
   margin-right: 1.5rem;
   border-radius: 2rem;
@@ -192,20 +194,19 @@ header div section:nth-child(3) ul li a{
   border: solid 1px white;
 }
 
-header div section:nth-child(3) ul li a:hover{
+header div section:nth-child(3) ul li a:hover {
   color: black;
   background-color: white;
   text-decoration-line: none;
 }
-header div section:nth-child(4){
+header div section:nth-child(4) {
   text-align: right;
   padding-right: 1.5rem;
 }
-header div section:nth-child(4) button{
+header div section:nth-child(4) button {
   background-color: transparent;
   border: none;
 }
-
 
 /*Main section styles*/
 
@@ -421,7 +422,6 @@ footer section:last-of-type section {
 
 /*Alle css properties i.c.m. classes en ID's */
 
-
 /*Op de website van ajax wordt er gebruik gemaakt van 3 verschillende nav elementen. Classes voor deze onderdelen zijn essentieel. */
 .mobile-menu {
   max-width: 100%;
@@ -437,7 +437,7 @@ footer section:last-of-type section {
   color: white;
 }
 
-.mobile-menu section:nth-child(1){
+.mobile-menu section:nth-child(1) {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -513,22 +513,36 @@ footer section:last-of-type section {
   transform: translateY(10%);
 }
 
-header div section:first-child section{
+header div section:first-child section {
   margin-left: 1rem;
   max-height: 100%;
 }
 
-header div section:first-child section a{
+header div section:first-child section a {
   padding: 1rem;
 }
 
+/* Reset inherritance of main grid */
+.webshop {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 0rem;
+  row-gap: 0rem;
+  padding-top: 0rem;
+  padding: 0rem;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 90rem;
+}
 
-
-.webshop section:nth-of-type(2) ul{
+.webshop section:nth-of-type(2) ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   list-style-type: none;
   list-style: none;
+  column-gap: 1rem;
+  row-gap: 1rem;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -536,19 +550,205 @@ header div section:first-child section a{
   padding-inline-start: 0px;
 }
 
-.webshop section:nth-of-type(2) ul li{
+.webshop section:nth-of-type(2) ul li {
   text-align: center;
+  position: relative;
 }
 
-.webshop img{
-  width: 50%;
+.webshop img {
   max-width: 100%;
   margin: auto;
   text-align: center;
 }
 
+.webshop section:nth-of-type(2) > ul li img:last-of-type {
+  height: 10%;
+  width: auto;
+  position: absolute;
+  bottom: 30%;
+  right: 10%;
+  background-color: white;
+}
 
-.webshop > h1 h2 h3 h4 h5 h6{
-  word-wrap:break-word;
+body
+  > main
+  > section:nth-child(2)
+  > section:nth-of-type(2)
+  > ul
+  > li:nth-child(1)
+  > article
+  > span:nth-child(3) {
+  background-color: black;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 10%;
+  display: inline-block;
+}
 
+body
+  > main
+  > section:nth-child(2)
+  > section:nth-of-type(2)
+  > ul
+  > li
+  > article
+  > h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+body
+  > main
+  > section:nth-child(2)
+  > section:nth-of-type(2)
+  > ul
+  > li
+  > article
+  > h3
+  + span {
+  font-size: 1.25rem;
+  color: #c01336;
+  display: inline-block;
+  font-weight: 700;
+  width: 100%;
+}
+
+body
+  > main
+  > section:nth-child(2)
+  > section:nth-of-type(2)
+  > ul
+  > li
+  > article
+  > span:last-of-type {
+  display: block;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 13px;
+  line-height: 20px;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.webshop > h1 h2 h3 h4 h5 h6 {
+  word-wrap: break-word;
+}
+
+.webshop section:first-of-type {
+  position: relative;
+}
+
+.webshop section:first-of-type img {
+  position: relative;
+  margin-top: -2rem;
+}
+
+.webshop section:first-of-type h1 {
+  all: unset;
+  position: absolute;
+  font-size: 30px;
+  display: inline-block;
+  background: #000;
+  font-family: "atrament-web", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  bottom: none;
+  left: none;
+  right: none;
+  left: 0;
+  bottom: 10% !important;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+}
+
+.webshop section:nth-of-type(2) nav {
+  background-color: #f5f6f7;
+}
+
+.webshop section:nth-of-type(2) nav ul {
+  margin-left: 1rem;
+  display: flex;
+  background-color: #f5f6f7;
+}
+
+.webshop section:nth-of-type(2) nav ul li {
+  transition: 0.18s;
+  color: #9b9b9b;
+  margin-right: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: solid transparent 4px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.webshop section:nth-of-type(2) nav ul li:hover {
+  color: black;
+  border-bottom: solid black 4px;
+  padding-bottom: 16px;
+  cursor: pointer;
+}
+
+.webshop section:nth-of-type(2) > section:first-of-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.webshop section:nth-of-type(2) > section:first-of-type span {
+  color: #aaa;
+}
+
+.webshop section:nth-of-type(2) > section:first-of-type section button {
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.webshop section:nth-of-type(2) > section:first-of-type section button img {
+  max-height: 16px;
+  max-width: 16px;
+}
+
+.webshop section:nth-of-type(2) section article img {
+  background-color: #f7f7f7;
+}
+
+body > main > section:nth-child(2) > section:nth-child(4){
+  padding: 1rem;
+}
+
+body > main > section:nth-child(2) > section:nth-child(4) p{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+body > main > section:nth-child(2) > section:nth-child(4) a{
+  all: unset;
+  color: #c01336;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .webshop section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
