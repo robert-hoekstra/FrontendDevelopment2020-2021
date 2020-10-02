@@ -146,7 +146,19 @@ header nav {
 }
 
 /*class om een grid toe te kennen aan een container/parent element.*/
-.gridHolder {
+/* .gridHolder {
+  max-width: 100%;
+  padding-top: 1rem;
+  width: 100%;
+  background-color: #c2002f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: -1;
+  height: 100%;
+} */
+
+body > header > div {
+
   max-width: 100%;
   padding-top: 1rem;
   width: 100%;
@@ -222,6 +234,7 @@ main {
   text-align: left;
   max-width: 90rem;
 }
+
 main article {
   padding-top: 1rem;
   margin-bottom: 1rem;
@@ -538,7 +551,7 @@ header div section:first-child section a {
 
 .webshop section:nth-of-type(2) ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
   list-style: none;
   column-gap: 1rem;
@@ -549,6 +562,23 @@ header div section:first-child section a {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
 }
+
+
+
+@media screen and (max-width: 992px) {
+  .webshop section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .webshop section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .webshop section:nth-of-type(2) ul li {
   text-align: center;
@@ -845,10 +875,4 @@ body > footer > section:nth-of-type(2) ul li a{
 
 }
 
-@media screen and (max-width: 520px) {
-  .webshop section:nth-of-type(2) ul {
-    display: grid;
-    grid-template-columns: 1fr;
 
-  }
-}
