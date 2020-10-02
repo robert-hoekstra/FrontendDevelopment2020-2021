@@ -510,7 +510,7 @@ footer section:last-of-type section {
 }
 /* Wordt gebruikt voor het toggle effect op het menu */
 .show {
-  transform: translateY(10%);
+  transform: translateY(11%);
 }
 
 header div section:first-child section {
@@ -746,29 +746,29 @@ body > main > section:nth-child(2) > section:nth-child(4) a{
   cursor: pointer;
 }
 
-body > main > section:nth-child(2) > section.newsletter{
+body > main > section:nth-child(2) > section:last-of-type{
   text-align: center;
   background-color: black;
   color: white;
 }
 
-body > main > section:nth-child(2) > section.newsletter img{
+body > main > section:nth-child(2) > section:last-of-type img{
 background-size: cover;
 
 }
 
-body > main > section:nth-child(2) > section.newsletter h4{
+body > main > section:nth-child(2) > section:last-of-type h4{
   font-weight: 700;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
 
-body > main > section:nth-child(2) > section.newsletter p{
+body > main > section:nth-child(2) > section:last-of-type p{
 margin-top: 1rem;
 margin-bottom: 1rem;
 }
 
-body > main > section:nth-child(2) > section.newsletter button{
+body > main > section:nth-child(2) > section:last-of-type button{
   margin: auto;
   border: none;
   color: #fff;
@@ -789,15 +789,15 @@ body > main > section:nth-child(2) > section.newsletter button{
   margin-bottom: 2rem;
 }
 
-body > main > section:nth-child(2) > section.newsletter button:hover{
+body > main > section:nth-child(2) > section:last-of-type button:hover{
   background-color: #313131;
 }
 
-body > main > section:nth-child(2) > section.newsletter a{
+body > main > section:nth-child(2) > section:last-of-type a{
   background-color: transparent;
 }
 
-body > main > section:nth-child(2) > section.newsletter a svg{
+body > main > section:nth-child(2) > section:last-of-type a svg{
   fill: white;
 }
 
@@ -805,7 +805,7 @@ body > main > section:nth-child(2) > section.newsletter a svg{
   fill: white;
 }
 
-body > main > section:nth-child(2) > section.newsletter > section{
+body > main > section:nth-child(2) > section:last-of-type > section{
   margin: auto;
   width: 68%;
 }

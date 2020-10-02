@@ -9,7 +9,8 @@
 2. https://www.ajax.nl/
 3. -...-
 
-
+## Focus
+Ik wil mij graag focussen op de responsiveness van het project maar ook op de surface laag. Ik ga een combinatie van beide maken.
 
 
 ## Eindgesprek (week 7/8)
@@ -82,7 +83,15 @@ Op een gegeven moment zag de opmaak er perfect uit op mijn laptop met Chrome.
 Maar toen ik de livelink ging bezoeken met mijn mobiele telefoon kwam ik erachter dat er een overflow op de pagina was. Deze zorgde er voor dat de scroll-behaviour van de gebruiker verstoord werd. 
 
 #### Week 4
+In week 4 heb ik het overflow probleem opgelost. Het schijnt dat SVG elementen (ook al zijn ze leeg) voor en overflow kunnen zorgen wanneer zij in een parent container geplaatst worden. Waar dit precies aan ligt weet ik niet gezien er geen styling was toegevoegd aan de svg elementen. Daarnaast heb ik er voor gezorgd dat de webshop pagina nu ook op mobiel goed werkt en er goed uit ziet.
+
+Wel kwam ik erachter dat de webshop pagina een andere mobiele navigatie gebruikt dan de homepagina. Ik denk dat ik deze functionaliteit meeneem in de surface laag van het project. Gezien het wel twee heel verschillende pagina's aan het worden zijn. 
+
 #### Week 5
+In week 5 ben ik verder gegaan op het oplossen van overflow problemen. Het bleek dat de svg elementen in de footer op de webshop pagina voor een overflow aan het zorgen waren.
+
+Daarnaast heb ik geprobeerd zoveel mogelijk classes weg te schrijven door middel van pseudoselectoren. Ik kan nog de boel verbeteren door de code op andere plekken te plaatsen en comments te schrijven.
+
 #### Week 6
 #### Week 7
 #### Week 8
