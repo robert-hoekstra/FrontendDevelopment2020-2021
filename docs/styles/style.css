@@ -179,7 +179,7 @@ header div section:nth-child(1) {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 header div section:nth-child(2) {
   text-align: right;
@@ -877,6 +877,37 @@ body > footer > section:nth-of-type(2) ul li a{
   color: #959696;
   text-decoration: none;
 
+}
+
+@media screen and (min-width: 800px){
+    body > header > div {
+      max-width: 100%;
+      padding-top: 1rem;
+      width: 100%;
+      background-color: #c2002f;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      z-index: -1;
+      height: 100%;
+      align-items: center;
+    }
+
+    body > header{
+      height: inherit;
+    }
+
+    header div section:nth-child(1){
+      align-items: center;
+    }
+
+    header div section:nth-child(2){
+      order: 1;
+    }
+
+    header div section:nth-child(4){
+      display: none;
+    }
 }
 
 
