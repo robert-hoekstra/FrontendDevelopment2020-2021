@@ -149,6 +149,10 @@ header nav {
   border-bottom: solid 2px white;
 }
 
+svg:hover{
+  fill: gray;
+}
+
 /*class om een grid toe te kennen aan een container/parent element.*/
 /* .gridHolder {
   max-width: 100%;
@@ -386,6 +390,8 @@ footer nav ul li a:hover {
   color: gray;
   text-decoration-line: none;
 }
+
+
 footer nav {
   padding-top: 1rem;
   display: grid;
@@ -568,20 +574,34 @@ header div section:first-child section a {
 }
 
 
-
-@media screen and (max-width: 992px) {
-  .webshop section:nth-of-type(2) ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-  }
+body > main > section:nth-child(3){
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  
 }
-@media screen and (max-width: 600px) {
-  .webshop section:nth-of-type(2) ul {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+
+footer nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
+
+body > main > section:nth-child(1){
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .webshop section:nth-of-type(2) ul li {
@@ -877,6 +897,53 @@ body > footer > section:nth-of-type(2) ul li a{
   color: #959696;
   text-decoration: none;
 
+}
+body > main > section:nth-child(1) > img{
+
+  grid-column: 1 / -1;
+}
+
+@media screen and (max-width: 992px) {
+  .webshop section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  body > main > section:nth-child(3){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    
+  }
+  footer nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body > main > section:nth-child(1){
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .webshop section:nth-of-type(2) ul {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  body > main > section:nth-child(3){
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+  footer nav{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 800px){

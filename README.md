@@ -30,8 +30,12 @@ Ik wil mij graag focussen op de responsiveness van het project maar ook op de su
 
 
 ## Voortgang 2 (week 5)
+Beide pagina's zien er praktisch hetzelfde uit zoals ze op de ajax website er ook uit zien.
+Naderhand ben ik er achter gekomen dat de webshop een andere header gebruikt dan de homepage. Afsproken met Janno dat dit geen probleem is en dat ik me kan focussen op de responsive en surface laag.
 
--same as voortgang 1-
+Ik had nog wat overflow issues op de shoppagina en uiteindelijk ook op de homepagina. Het bleek te liggen aan lege SVG elementen die een bepaalde width inheritten. Door de SVG's te verwijderen, in te vullen, of een maat mee te geven was het probleem verholpen.
+
+Ik wil de komende tijd focussen aan het responsive maken van beide pagina's. Als dat gelukt is wil ik aan de slag gaan met de surface laag om er een toffe website van te maken.
 
 
 
@@ -93,6 +97,11 @@ In week 5 ben ik verder gegaan op het oplossen van overflow problemen. Het bleek
 Daarnaast heb ik geprobeerd zoveel mogelijk classes weg te schrijven door middel van pseudoselectoren. Ik kan nog de boel verbeteren door de code op andere plekken te plaatsen en comments te schrijven.
 
 #### Week 6
+Inmiddels zijn alle classes bijna weg. Een enkele class om een mobielmenu te bouwen staat nog. Misschien dat ik deze ook nog ga weg schrijven.
+
+Ik moet in mijn code flink wat comments gaan toevoegen en ik moet ook de boel gestructureerd opschrijven.
+
+
 #### Week 7
 #### Week 8
 
