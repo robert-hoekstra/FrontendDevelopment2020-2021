@@ -41,11 +41,11 @@ body {
   min-width: 420px;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-nav.filter-bar ul {
+body > main > section:nth-child(2) > nav ul{
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
@@ -54,13 +54,13 @@ nav.filter-bar ul {
   justify-content: space-between;
 }
 
-nav.filter-bar ul li {
+body > main > section:nth-child(2) > nav ul li {
   transition: 0.3s;
   font-weight: bold;
   border-bottom: solid 2px transparent;
 }
 
-nav.filter-bar ul li:hover {
+body > main > section:nth-child(2) > nav ul li:hover {
   border-bottom: solid 2px #c2002f;
   cursor: pointer;
 }
@@ -149,10 +149,6 @@ header nav {
   border-bottom: solid 2px white;
 }
 
-svg:hover{
-  fill: gray;
-}
-
 /*class om een grid toe te kennen aan een container/parent element.*/
 /* .gridHolder {
   max-width: 100%;
@@ -166,7 +162,6 @@ svg:hover{
 } */
 
 body > header > div {
-
   max-width: 100%;
   padding-top: 1rem;
   width: 100%;
@@ -189,15 +184,17 @@ header div section:nth-child(2) {
   text-align: right;
   padding-right: 1.5rem;
 }
-/* header div section:nth-child(3){
 
-} */
+header div section:nth-child(3) {
+  width: 100%;
+}
 header div section:nth-child(3) ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   list-style: none;
   padding-left: 1.5rem;
+  justify-content: flex-end;
 }
 
 header div section:nth-child(3) ul li a {
@@ -391,7 +388,6 @@ footer nav ul li a:hover {
   text-decoration-line: none;
 }
 
-
 footer nav {
   padding-top: 1rem;
   display: grid;
@@ -573,36 +569,22 @@ header div section:first-child section a {
   padding-inline-start: 0px;
 }
 
-
-body > main > section:nth-child(3){
+body > main > section:nth-child(3) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
-  
 }
 
 footer nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
-body > main > section:nth-child(1){
+body > main > section:nth-child(1) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .webshop section:nth-of-type(2) ul li {
   text-align: center;
@@ -784,45 +766,44 @@ body
   background-color: #f7f7f7;
 }
 
-body > main > section:nth-child(2) > section:nth-child(4){
+body > main > section:nth-child(2) > section:nth-child(4) {
   padding: 1rem;
 }
 
-body > main > section:nth-child(2) > section:nth-child(4) p{
+body > main > section:nth-child(2) > section:nth-child(4) p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
-body > main > section:nth-child(2) > section:nth-child(4) a{
+body > main > section:nth-child(2) > section:nth-child(4) a {
   all: unset;
   color: #c01336;
   font-weight: 700;
   cursor: pointer;
 }
 
-body > main > section:nth-child(2) > section:last-of-type{
+body > main > section:nth-child(2) > section:last-of-type {
   text-align: center;
   background-color: black;
   color: white;
 }
 
-body > main > section:nth-child(2) > section:last-of-type img{
-background-size: cover;
-
+body > main > section:nth-child(2) > section:last-of-type img {
+  background-size: cover;
 }
 
-body > main > section:nth-child(2) > section:last-of-type h4{
+body > main > section:nth-child(2) > section:last-of-type h4 {
   font-weight: 700;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
 }
 
-body > main > section:nth-child(2) > section:last-of-type p{
-margin-top: 1rem;
-margin-bottom: 1rem;
+body > main > section:nth-child(2) > section:last-of-type p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-body > main > section:nth-child(2) > section:last-of-type button{
+body > main > section:nth-child(2) > section:last-of-type button {
   margin: auto;
   border: none;
   color: #fff;
@@ -843,28 +824,28 @@ body > main > section:nth-child(2) > section:last-of-type button{
   margin-bottom: 2rem;
 }
 
-body > main > section:nth-child(2) > section:last-of-type button:hover{
+body > main > section:nth-child(2) > section:last-of-type button:hover {
   background-color: #313131;
 }
 
-body > main > section:nth-child(2) > section:last-of-type a{
+body > main > section:nth-child(2) > section:last-of-type a {
   background-color: transparent;
 }
 
-body > main > section:nth-child(2) > section:last-of-type a svg{
+body > main > section:nth-child(2) > section:last-of-type a svg {
   fill: white;
 }
 
-#acronis_logo{
+#acronis_logo {
   fill: white;
 }
 
-body > main > section:nth-child(2) > section:last-of-type > section{
+body > main > section:nth-child(2) > section:last-of-type > section {
   margin: auto;
   width: 68%;
 }
 
-body > footer > section:first-of-type ul{
+body > footer > section:first-of-type ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -872,7 +853,7 @@ body > footer > section:first-of-type ul{
   align-items: center;
 }
 
-body > footer > section:nth-of-type(2) ul{
+body > footer > section:nth-of-type(2) ul {
   all: unset;
   list-style: none;
   display: flex;
@@ -881,25 +862,20 @@ body > footer > section:nth-of-type(2) ul{
   align-items: center;
 }
 
-body > footer > section:nth-of-type(2){
+body > footer > section:nth-of-type(2) {
   text-align: center;
 }
 
-
-
-body > footer > section:nth-of-type(2) ul li{
+body > footer > section:nth-of-type(2) ul li {
   color: #959696;
   text-decoration: none;
-
 }
 
-body > footer > section:nth-of-type(2) ul li a{
+body > footer > section:nth-of-type(2) ul li a {
   color: #959696;
   text-decoration: none;
-
 }
-body > main > section:nth-child(1) > img{
-
+body > main > section:nth-child(1) > img {
   grid-column: 1 / -1;
 }
 
@@ -907,26 +883,26 @@ body > main > section:nth-child(1) > img{
   .webshop section:nth-of-type(2) ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
   }
 
-  body > main > section:nth-child(3){
+  body > main > section:nth-child(3) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    
   }
-  footer nav{
+  footer nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  body > main > section:nth-child(1){
+  body > main > section:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+  header div section:nth-child(3) ul {
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 600px) {
   .webshop section:nth-of-type(2) ul {
@@ -934,47 +910,44 @@ body > main > section:nth-child(1) > img{
     grid-template-columns: 1fr;
   }
 
-  body > main > section:nth-child(3){
+  body > main > section:nth-child(3) {
     display: grid;
     grid-template-columns: 1fr;
-    
   }
 
-  footer nav{
+  footer nav {
     display: grid;
     grid-template-columns: 1fr;
   }
 }
 
-@media screen and (min-width: 800px){
-    body > header > div {
-      max-width: 100%;
-      padding-top: 1rem;
-      width: 100%;
-      background-color: #c2002f;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      z-index: -1;
-      height: 100%;
-      align-items: center;
-    }
+@media screen and (min-width: 800px) {
+  body > header > div {
+    max-width: 100%;
+    padding-top: 1rem;
+    width: 100%;
+    background-color: #c2002f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: -1;
+    height: 100%;
+    align-items: center;
+  }
 
-    body > header{
-      height: inherit;
-    }
+  body > header {
+    height: inherit;
+  }
 
-    header div section:nth-child(1){
-      align-items: center;
-    }
+  header div section:nth-child(1) {
+    align-items: center;
+  }
 
-    header div section:nth-child(2){
-      order: 1;
-    }
+  header div section:nth-child(2) {
+    order: 1;
+  }
 
-    header div section:nth-child(4){
-      display: none;
-    }
+  header div section:nth-child(4) {
+    display: none;
+  }
 }
-
-
