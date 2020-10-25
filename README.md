@@ -8,6 +8,9 @@
 1. https://www.ajaxshop.nl/nl/wedstrijd
 2. https://www.ajax.nl/
 3. https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+4. https://css-tricks.com/snippets/css/complete-guide-grid/
+5. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+6. Lesstof CMD
 
 ## Focus
 Ik wil mij graag focussen op de responsiveness van het project maar ook op de surface laag. Ik ga een combinatie van beide maken.
