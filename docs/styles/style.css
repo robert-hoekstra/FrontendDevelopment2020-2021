@@ -45,7 +45,7 @@ button {
   cursor: pointer;
 }
 
-body > main > section:nth-child(2) > nav ul{
+body > main > section:nth-child(2) > nav ul {
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
@@ -88,7 +88,7 @@ main section section:last-child a {
 main section section a {
   bottom: 10%;
   left: 5%;
-  position: absolute;
+  position: relative;
   margin-top: 0.5rem;
   color: white;
   background-color: #c2002f;
@@ -105,6 +105,35 @@ main section section a {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.43;
+}
+
+main > button:last-of-type {
+  transition: 0.5s;
+  display: block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  background-color: #c01336;
+  border-radius: 10%;
+  color: white;
+  box-shadow: 0px 0px 5px 5px #31313157;
+  border: none;
+}
+
+main > button:last-of-type:hover {
+  display: block;
+  height: 55px;
+  width: 55px;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  background-color: #c01336;
+  border-radius: 10%;
+  color: white;
+  box-shadow: 0px 0px 5px 5px #31313157;
+  border: none;
 }
 
 img {
@@ -187,6 +216,10 @@ header div section:nth-child(2) {
 
 header div section:nth-child(3) {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
 }
 header div section:nth-child(3) ul {
   display: flex;
@@ -195,6 +228,15 @@ header div section:nth-child(3) ul {
   list-style: none;
   padding-left: 1.5rem;
   justify-content: flex-end;
+}
+
+header div section:nth-child(3) ul:first-of-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding-left: 1.5rem;
+  justify-content: flex-start;
 }
 
 header div section:nth-child(3) ul li a {
@@ -209,6 +251,37 @@ header div section:nth-child(3) ul li a {
   color: white;
   text-decoration-line: none;
   border: solid 1px white;
+}
+
+header div section:nth-child(3) ul:first-of-type li a {
+  padding: 0.6rem;
+  margin-right: 1.5rem;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: "SuisseIntl", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  color: white;
+  text-decoration-line: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: solid 2px transparent;
+}
+
+header div section:nth-child(3) ul:first-of-type li a:hover {
+  padding: 0.6rem;
+  margin-right: 1.5rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  font-family: "SuisseIntl", sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  color: white;
+  text-decoration-line: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 2px white;
 }
 
 header div section:nth-child(3) ul li a:hover {
@@ -511,6 +584,7 @@ footer section:last-of-type section {
 }
 
 /*Binnen sections wordt er niet altijd even veel links gebruikt. Ook niet elke link wordt gebruikt voor dezelfde doeleinde. Deze class is voor de blog style categories die Ajax gebruikt op hun website */
+
 .category-link {
   font-family: "SuisseIntl", sans-serif;
   font-size: 0.625rem;
@@ -525,7 +599,6 @@ footer section:last-of-type section {
 }
 /* Specifieke class voor sections die net iets afwijken van de rest omdat zij als advertisement dienen */
 
-
 header div section:first-child section {
   margin-left: 1rem;
   max-height: 100%;
@@ -534,7 +607,6 @@ header div section:first-child section {
 header div section:first-child section a {
   padding: 1rem;
 }
-
 
 body > main > section:nth-child(3) {
   display: grid;
@@ -618,7 +690,6 @@ body
   white-space: nowrap;
 }
 
-
 body > main > section:nth-child(2) > section:nth-child(4) {
   padding: 1rem;
 }
@@ -687,6 +758,10 @@ body > main > section:nth-child(2) > section:last-of-type a {
 
 body > main > section:nth-child(2) > section:last-of-type a svg {
   fill: white;
+}
+
+html{
+  overflow-x: hidden;
 }
 
 #acronis_logo {
@@ -767,7 +842,6 @@ body > main > section:nth-child(1) > img {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
 }
-
 
 .webshop section:nth-of-type(2) ul li {
   text-align: center;
@@ -885,8 +959,6 @@ body > main > section:nth-child(1) > img {
   background-color: #f7f7f7;
 }
 
-
-
 @media screen and (max-width: 992px) {
   .webshop section:nth-of-type(2) ul {
     display: grid;
@@ -909,6 +981,14 @@ body > main > section:nth-child(1) > img {
     gap: 1rem;
   }
   header div section:nth-child(3) ul {
+    justify-content: flex-start;
+  }
+
+  header div section:nth-child(3) ul:first-of-type {
+    display: none;
+  }
+
+  header div section:nth-child(3) {
     justify-content: flex-start;
   }
 }

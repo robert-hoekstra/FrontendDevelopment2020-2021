@@ -7,10 +7,11 @@
 ## Bronnenlijst
 1. https://www.ajaxshop.nl/nl/wedstrijd
 2. https://www.ajax.nl/
-3. -...-
+3. https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 ## Focus
 Ik wil mij graag focussen op de responsiveness van het project maar ook op de surface laag. Ik ga een combinatie van beide maken.
+Uiteindelijk heeft de focus meer op de responsiveness gelegen.
 
 
 ## Eindgesprek (week 7/8)
@@ -19,13 +20,25 @@ Ik wil mij graag focussen op de responsiveness van het project maar ook op de su
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+
+![1](https://user-images.githubusercontent.com/45421908/97118097-767cce00-1708-11eb-91d2-65838ec5e4f3.png)
+![2](https://user-images.githubusercontent.com/45421908/97118100-7a105500-1708-11eb-8541-df279354faab.png)
+![3](https://user-images.githubusercontent.com/45421908/97118103-7c72af00-1708-11eb-9b0d-f3aad75f97f1.png)
+![4](https://user-images.githubusercontent.com/45421908/97118123-8bf1f800-1708-11eb-812e-c384371cb80c.png)
+
+
 
 
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Tijdens het voortgangsgesprek was er weinig aan te merken op de webpagina's.
+Ik heb na het gesprek wat comments geschreven, code opgeschoond en wat een scrolltop button toegevoegd.
+
+Voor de rest heb ik mij beziggehouden met het gedrag van de header bij verschillende schermgroottes.
+
+Er zijn wat bugs ontstaan die CSS related zijn. Ik heb een aantal van de bugs gewijzigd. Volgens mij is de website nu gewoon weer zoals het hoort.
+
 
 
 
@@ -103,7 +116,17 @@ Ik moet in mijn code flink wat comments gaan toevoegen en ik moet ook de boel ge
 
 
 #### Week 7
+
+Tijdens het voortgangsgesprek was er weinig aan te merken op de webpagina's.
+Ik heb na het gesprek wat comments geschreven, code opgeschoond en wat een scrolltop button toegevoegd.
+
+Voor de rest heb ik mij beziggehouden met het gedrag van de header bij verschillende schermgroottes.
+
+Er zijn wat bugs ontstaan die CSS related zijn. Ik heb een aantal van de bugs gewijzigd. Volgens mij is de website nu gewoon weer zoals het hoort.
+
+
 #### Week 8
+Beoordelingsweek.
 
 
 
