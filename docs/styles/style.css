@@ -37,6 +37,7 @@ button {
   cursor: pointer;
 }
 
+/* Styling for filter bar on main element */
 body > main > section:nth-child(2) > nav ul {
   padding: 0;
   display: flex;
@@ -57,6 +58,7 @@ body > main > section:nth-child(2) > nav ul li:hover {
   cursor: pointer;
 }
 
+/* Social buttons on articles for different styling */
 button.social-share {
   border: none;
   background: none;
@@ -68,7 +70,7 @@ article > section {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+/* Make element relative so child elements can be positioned absolute */
 main section:last-child section {
   position: relative;
 }
@@ -77,6 +79,7 @@ main section section:last-child a {
   position: relative;
 }
 
+/* all links in articles in the main section */
 main section section a {
   bottom: 10%;
   left: 5%;
@@ -128,6 +131,7 @@ main > button:last-of-type:hover {
   border: none;
 }
 
+/* Make sure images dont go outside their boundary containers */
 img {
   width: 100%;
 }
@@ -149,7 +153,8 @@ h5,
 h6 {
   font-family: "SuisseIntl", sans-serif;
 }
-
+/* sticky header for scrolling on page */
+/* Header styling */
 header {
   z-index: 50;
   display: block;
@@ -170,18 +175,6 @@ header nav {
   border-bottom: solid 2px white;
 }
 
-/*class om een grid toe te kennen aan een container/parent element.*/
-/* .gridHolder {
-  max-width: 100%;
-  padding-top: 1rem;
-  width: 100%;
-  background-color: #c2002f;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  z-index: -1;
-  height: 100%;
-} */
-
 body > header > div {
   max-width: 100%;
   padding-top: 1rem;
@@ -193,7 +186,7 @@ body > header > div {
   height: 100%;
 }
 /* column selectors. Kan ik nog omschrijven naar nth-of-type(#) i.p.v. id's maar dit is specifiek voor de nav */
-
+/* first column in header */
 header div section:nth-child(1) {
   padding-left: 1.5rem;
   display: flex;
@@ -201,11 +194,14 @@ header div section:nth-child(1) {
   flex-direction: row;
   /* justify-content: space-between; */
 }
+
+/* second column in header */
 header div section:nth-child(2) {
   text-align: right;
   padding-right: 1.5rem;
 }
 
+/* third column  */
 header div section:nth-child(3) {
   width: 100%;
   display: flex;
@@ -230,7 +226,7 @@ header div section:nth-child(3) ul:first-of-type {
   padding-left: 1.5rem;
   justify-content: flex-start;
 }
-
+/* white buttons under logo's */
 header div section:nth-child(3) ul li a {
   padding: 0.6rem;
   padding-top: 0.2rem;
@@ -293,7 +289,7 @@ header div section:nth-child(4) button {
 }
 
 /*Main section styles*/
-
+/* grid is used for responsive purposes and gap is great for auto margin elements */
 main {
   display: grid;
   grid-template-columns: 1fr;
@@ -311,7 +307,7 @@ main article {
   padding-top: 1rem;
   margin-bottom: 1rem;
 }
-
+/* all images within articles need to be relative so items can be positioned on top of them */
 main article > img {
   position: relative;
   /* min-height: 25.375rem; */
@@ -523,12 +519,13 @@ footer section:last-of-type section {
   color: white;
 }
 
+/* first column within mobile menu */
 .mobile-menu section:nth-child(1) {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
 }
-
+/* second column within mobile menu */
 .mobile-menu section:nth-child(2) {
   display: flex;
   flex-wrap: nowrap;
@@ -602,7 +599,7 @@ header div section:first-child section a {
   margin-left: 0.5rem;
 }
 
-header img{
+header img {
   height: 1.5rem;
   width: auto;
 }
@@ -623,7 +620,7 @@ body > main > section:nth-child(1) {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-
+/* Specific styling for elements within the main tag. Some elements are styled different within this section */
 body
   > main
   > section:nth-child(2)
@@ -688,7 +685,7 @@ body
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+/* some spacing for elements within the main element */
 body > main > section:nth-child(2) > section:nth-child(4) {
   padding: 1rem;
 }
@@ -725,7 +722,7 @@ body > main > section:nth-child(2) > section:last-of-type p {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
+/* big button for subscribing to newsletter */
 body > main > section:nth-child(2) > section:last-of-type button {
   margin: auto;
   border: none;
@@ -755,41 +752,38 @@ body > main > section:nth-child(2) > section:last-of-type a {
   background-color: transparent;
 }
 
-/* body > main > section:nth-child(2) > section:last-of-type a svg {
-  fill: white;
-} */
-
-svg{
+/* Fill svg with same color to make sure inline styling gets overwritten */
+svg {
   transition: 0.2s;
   fill: #fff;
   max-width: 100%;
 }
 
-header svg{
+header svg {
   fill: #fff;
 }
-
-header svg:hover{
+/* micro interaction for svg */
+header svg:hover {
   fill: #181314;
 }
 
-footer  svg{
+footer svg {
   fill: #181314;
 }
 
-svg:hover{
+svg:hover {
   fill: #c2002f;
 }
 
 #acronis_logo {
   fill: white;
 }
-
+/*make sure section does not cover full width for readabillity */
 body > main > section:nth-child(2) > section:last-of-type > section {
   margin: auto;
   width: 68%;
 }
-
+/* first footer list */
 body > footer > section:first-of-type ul {
   list-style: none;
   display: flex;
@@ -797,7 +791,7 @@ body > footer > section:first-of-type ul {
   justify-content: space-around;
   align-items: center;
 }
-
+/* second footer list */
 body > footer > section:nth-of-type(2) ul {
   all: unset;
   list-style: none;
@@ -806,11 +800,11 @@ body > footer > section:nth-of-type(2) ul {
   justify-content: space-around;
   align-items: center;
 }
-
+/* subfooter */
 body > footer > section:nth-of-type(2) {
   text-align: center;
 }
-
+/* list items in subfooter */
 body > footer > section:nth-of-type(2) ul li {
   color: #959696;
   text-decoration: none;
@@ -827,11 +821,12 @@ body > main > section:nth-child(1) > img {
 .advertisement {
   margin-top: 1rem;
 }
-/* Wordt gebruikt voor het toggle effect op het menu */
+/* class for toggling mobile navigation */
 .show {
   transform: translateY(3vh);
 }
 
+/* START OF WEBSHOP CSS. WRITTEN WITH CLASS TO MAKE SURE INHERITANCE AND STYLING ISSUES ARE PRESERVED */
 /* Reset inherritance of main grid */
 .webshop {
   display: grid;
@@ -870,7 +865,7 @@ body > main > section:nth-child(1) > img {
   margin: auto;
   text-align: center;
 }
-
+/* style elements on top of productimages */
 .webshop section:nth-of-type(2) > ul li img:last-of-type {
   height: 10%;
   width: auto;
@@ -880,6 +875,7 @@ body > main > section:nth-child(1) > img {
   background-color: transparent;
 }
 
+/* make sure product titles don't break out of image context. */
 .webshop > h1 h2 h3 h4 h5 h6 {
   word-wrap: break-word;
 }
@@ -915,7 +911,7 @@ body > main > section:nth-child(1) > img {
   width: auto;
   height: auto;
 }
-
+/* styling for webshop product navigation */
 .webshop section:nth-of-type(2) nav {
   background-color: #f5f6f7;
 }
@@ -975,7 +971,9 @@ body > main > section:nth-child(1) > img {
 .webshop section:nth-of-type(2) section article img {
   background-color: #f7f7f7;
 }
+/* Mediaqueries for responsive design */
 
+/* phablets and tablets */
 @media screen and (max-width: 992px) {
   .webshop section:nth-of-type(2) ul {
     display: grid;
@@ -1009,6 +1007,8 @@ body > main > section:nth-child(1) > img {
     justify-content: flex-start;
   }
 }
+
+/* mobile screens */
 @media screen and (max-width: 600px) {
   .webshop section:nth-of-type(2) ul {
     display: grid;
@@ -1026,6 +1026,7 @@ body > main > section:nth-child(1) > img {
   }
 }
 
+/* screens bigger than 800px */
 @media screen and (min-width: 800px) {
   body > header > div {
     max-width: 100%;
