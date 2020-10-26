@@ -127,8 +127,8 @@ main > button:last-of-type:hover {
   height: 55px;
   width: 55px;
   position: fixed;
-  bottom: 10%;
-  right: 10%;
+  bottom: 5%;
+  right: 5%;
   background-color: #c01336;
   border-radius: 10%;
   color: white;
