@@ -19,8 +19,9 @@ function scrollToTop(){
   }
 // Onderstaande code kijkt naar de hoogte van de body view. als deze een bepaalt punt voorbij is dan wordt de display stijl aangepast zodat de knop zicht baar is.
 // https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-window.onscroll = function() {scrollFunction()};
 
+
+window.addEventListener("scroll", scrollFunction)
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     scrollButton.style.display = "block";
@@ -28,3 +29,6 @@ function scrollFunction() {
     scrollButton.style.display = "none";
   }
 }
+
+
+
