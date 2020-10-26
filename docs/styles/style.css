@@ -764,6 +764,14 @@ html{
   overflow-x: hidden;
 }
 
+svg{
+  transition: 0.2s;
+}
+
+svg:hover{
+  fill: #c2002f;
+}
+
 #acronis_logo {
   fill: white;
 }
