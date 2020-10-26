@@ -32,14 +32,6 @@
   font-family: "SuisseIntl", sans-serif;
 }
 /*Language switch knopje*/
-.language {
-  position: absolute;
-  right: 10%;
-}
-
-body {
-  min-width: 420px;
-}
 
 button {
   cursor: pointer;
@@ -241,6 +233,8 @@ header div section:nth-child(3) ul:first-of-type {
 
 header div section:nth-child(3) ul li a {
   padding: 0.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   margin-right: 1.5rem;
   border-radius: 2rem;
   transition: all 0.3s ease;
