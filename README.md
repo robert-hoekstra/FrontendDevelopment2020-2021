@@ -16,10 +16,36 @@
 Ik wil mij graag focussen op de responsiveness van het project maar ook op de surface laag. Ik ga een combinatie van beide maken.
 Uiteindelijk heeft de focus meer op de responsiveness gelegen.
 
+## Vebeteringen t.o.v. week 7/8
+
+* Alle W3C errors zijn verwijderd. Sommige warnings staan nog (sections zonder header). Vanwege functie in website niet aangepast
+* Anchor elemenenten zijn of verwijderd of netjes in een LI element geplaatst
+* Async statements naar de head verplaatst.
+* SVG inline styles zoveel mogelijk weggehaald. In de header aangepast om aan te tonen dat de stof begrepen is. Niet voor elk SVG element op de hele website aangepast vanwege tijd.
+* Comments toegevoegd aan de code
+* Code refactored
+* Javascript herschreven naar een consistente en logische stijl.
+* Overflow bug werd veroorzaakt door een min-width property op de body en inline svg elementen. SVG is nu extern en zit in een <img> container.
+* Meta tag lang attribute toegevoegd en bij SVG elementen zoveel mogelijk weggehaald. (zoals inline identifications)
+
 
 ## Eindgesprek (week 7/8)
+Tijdens het eindgesprek met Janno kwamen er een aantal punten naar voren welke aan verbetering toe waren.
+De punten waren:
 
--dit ging goed & dit was lastig-
+* W3c errors.
+* Anchor Elements direct in een UL element geplaatst zonder LI items
+* Defer async statements samen geplaatst in de tail van document.
+* Svg inline styles.
+* Code heeft meer comments nodig ter verduidelijking.
+* Window.onscroll event is niet consistent met andere eventlistener.
+* Overflow bug op kleine aparaten aanwezig.
+* Meta tags aanpassingen nodig volgens w3c.
+
+/FrontendDevelopment2020-2021/
+
+
+
 
 **Screenshot(s):**
 
